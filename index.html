@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,13 @@
     <title>Fortnite</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <!--<embed src="./assets/ignition.mid" autostart="true" loop="true"
-    width="2" height="0">
-    </embed>-->
-    <!--<bgsound src="./assets/ignition.mid" loop="infinite">-->
 
-        <audio id="audio" controls="" style="width: 100%;"><source src="./assets/ignition.mp3" type="audio/mpeg">
-            Please update your browser does not support the audio element.</audio>
-        <script type="text/javascript">
+<body>
+    <!--<script type="text/javascript">
             function autoplay(){
                 var r =confirm("Pls click me");
                 if (r == true) {
-                    document.getElementById("audio").play();
+                    document.getElementById("player").play();
                 }
               }
             </script>
@@ -27,28 +22,28 @@
 
             <audio controls autoplay loop hidden>
                 <source src="./assets/ignition.mp3" type="audio/mpeg">
-            </audio>
+            </audio>-->
 
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
 
 
     <div class="bait__container">
         <a href="https://www.youtube.com/watch?v=FFFMW_e0Thg">
             <img src="./assets/deagle.png" class="bait__img deagle" alt="">
         </a>
-        <a href="https://www.youtube.com/watch?v=FFFMW_e0Thg">
-            <button class="bait__button">Click Me!</button>
-        </a>
-        <a href="https://www.youtube.com/watch?v=FFFMW_e0Thg">
-            <div>
-                Click a skin or button!
-            </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=FFFMW_e0Thg">
-            <button class="bait__button">Click Me!</button>
-        </a>
+        <div>
+            <input class="bait__button" type="button" value="Click Me or Minima Skins" onclick="play()">
+            <audio id="audio" src="./assets/ignition.mp3"></audio>
+        </div>
         <a href="https://www.youtube.com/watch?v=FFFMW_e0Thg">
             <img src="./assets/phantom.png" class="bait__img phantom" alt="">
         </a>
     </div>
 </body>
+
 </html>
