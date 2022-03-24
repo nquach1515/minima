@@ -7,6 +7,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .bait__container {
     width: 100%;
     height: 100vh;
@@ -30,4 +35,18 @@
 .bait__button:hover {
     cursor: pointer;
     opacity: 70%;
+}
+
+@media (max-width: 480px) {
+    .bait__container {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .bait__img {
+        width: 100%;
+        height: auto;
+    }
 }
